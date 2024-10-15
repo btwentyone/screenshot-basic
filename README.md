@@ -57,7 +57,7 @@ end)
 
 Example to send photos to Discord:
 
-**Code to put on the client side of your script**
+**Client side**
 ```lua
 exports['screenshot-basic']:requestScreenshotUpload(Config.WebhookTakeMugS, 'files[]', {encoding = 'jpg'}, function(data)
     local resp = json.decode(data)
