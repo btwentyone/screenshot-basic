@@ -9,7 +9,7 @@ and wraps these calls using Three.js to 'simplify' WebGL initialization and copy
 ## Usage
 
 1. Put the "screenshot-basic" folder in 'resources/[local]'.
-2. In your 'server.cfg' add the command to launch screenshot-basic **ensure screenshot-basic**.
+2. In your 'server.cfg' add the command to launch screenshot-basic : **ensure screenshot-basic**.
 3. Restart your server and wait for the 'screenshot-basic' script to launch correctly following your console.
 
 ## API
