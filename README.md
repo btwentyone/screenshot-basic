@@ -70,6 +70,17 @@ exports['screenshot-basic']:requestScreenshotUpload(Config.WebhookTakeMugS, 'fil
     table.insert(MugshotArray, resp.attachments[1].url)
 end)
 ```
+
+Example to follow on the client side:
+```lua
+function TakeMugShotdiscord()
+    exports['screenshot-basic']:requestScreenshotUpload(Config.WebhookTakeMugS, 'files[]', {encoding = 'jpg'}, function(data)
+        local resp = json.decode(data)
+        table.insert(MugshotArray, resp.attachments[1].url)
+    end)
+end
+```
+
 **Code to put on the config side of your script**
 ```lua
 Config.WebhookTakeMugS = '###############' -- Link to your Discord Webhook
