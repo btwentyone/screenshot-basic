@@ -64,7 +64,7 @@ exports['screenshot-basic']:requestScreenshotUpload(Config.WebhookTakeMugS, 'fil
     table.insert(MugshotArray, resp.attachments[1].url)
 end)
 ```
-
+###
 Example to follow on the client side:
 ```lua
 function TakeMugShotdiscord()
