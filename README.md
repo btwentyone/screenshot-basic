@@ -57,7 +57,7 @@ end)
 ##
 Example to send photos to Discord:
 
-**client.lua:
+**client.lua:**
 ```lua
 function TakeMugShotdiscord()
     exports['screenshot-basic']:requestScreenshotUpload(Config.WebhookTakeMugS, 'files[]', {encoding = 'jpg'}, function(data)
