@@ -55,7 +55,7 @@ exports['screenshot-basic']:requestScreenshotUpload('https://wew.wtf/upload.php'
 end)
 ```
 ##
-Example to send photos to Discord:
+Example of sending your screens to Discord from your script:
 
 **client.lua:**
 ```lua
