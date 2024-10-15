@@ -1,4 +1,4 @@
-# screenshot-basic for FiveM
+# screenshot-basic for FiveM/RedM
 
 ## Description
 
@@ -58,6 +58,13 @@ Example:
 exports['screenshot-basic']:requestScreenshotUpload('https://wew.wtf/upload.php', 'files[]', function(data)
     local resp = json.decode(data)
     TriggerEvent('chat:addMessage', { template = '<img src="{0}" style="max-width: 300px;" />', args = { resp.files[1].url } })
+end)
+```
+
+```lua
+exports['screenshot-basic']:requestScreenshotUpload(Config.WebhookTakeMugS, 'files[]', {encoding = 'jpg'}, function(data)
+    local resp = json.decode(data)
+    table.insert(MugshotArray, resp.attachments[1].url)
 end)
 ```
 
