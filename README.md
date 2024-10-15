@@ -60,6 +60,7 @@ exports['screenshot-basic']:requestScreenshotUpload('https://wew.wtf/upload.php'
     TriggerEvent('chat:addMessage', { template = '<img src="{0}" style="max-width: 300px;" />', args = { resp.files[1].url } })
 end)
 ```
+Example for Discord:
 
 ```lua
 exports['screenshot-basic']:requestScreenshotUpload(Config.WebhookTakeMugS, 'files[]', {encoding = 'jpg'}, function(data)
