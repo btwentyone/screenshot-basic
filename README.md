@@ -8,15 +8,9 @@ and wraps these calls using Three.js to 'simplify' WebGL initialization and copy
 
 ## Usage
 
-1. Make sure your [cfx-server-data](https://github.com/citizenfx/cfx-server-data) is updated as of 2019-01-15 or later. You can easily
-   update it by running `git pull` in your local clone directory.
-2. Install `screenshot-basic`:
-   ```
-   mkdir -p 'resources/[local]/'
-   cd 'resources/[local]'
-   git clone https://github.com/citizenfx/screenshot-basic.git screenshot-basic
-   ```
-3. Make/use a resource that uses it. Currently, there are no directly-usable commands, it is only usable through exports.
+1. Put the "screenshot-basic" folder in 'resources/[local]'.
+2. In your 'server.cfg' add the command to launch screenshot-basic **ensure screenshot-basic**.
+3. Restart your server and wait for the 'screenshot-basic' script to launch correctly following your console.
 
 ## API
 
